@@ -1,13 +1,49 @@
-.header  .header-meanu {
-    background: linear-gradient(45deg, #ff0404, #0008ff);
+body {
+    background: rgb(236, 236, 226);
 }
 
-#one{
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x) *-.5);
-    margin-left: calc(var(--bs-gutter-x) *-.5);
+
+#home:hover {
+    color: gold;
+    transition: 0.3s;
+}
+
+#home:hover{
+   background: linear-gradient(45deg, #ff0404, #00ccff);
+    color: black ;
+    border-radius: 10px;
+}
+
+.slider-img{
+    object-fit: cover;
+    filter: brightness(50%);
+    filter: blur(3px);
+    transform: scale(1.01);
+}
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+}
+.carousel-caption h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.carousel-caption p{
+    font-size: 22px;
+    color: #ffffff;
+}
+
+#quick-text{
+    display: inline-block;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+#quick-text:hover{
+    transform: translateX(25px);
+    color: rgb(233, 151, 9);
 }
